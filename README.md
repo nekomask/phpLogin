@@ -1,2 +1,1 @@
-# phpLogin
-phpLogin
+Creating a login system in PHP
