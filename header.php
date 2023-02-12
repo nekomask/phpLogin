@@ -26,7 +26,7 @@
     <input type="password" name="pwd" value="Password">
 <button type="Submit" name="login-submit">Login</button>
 </form>
-<a href="signup.php">Signup</a>
+<a class="signup" href="signup.php">Signup</a>
 <form action="includes/logout.inc.php" method="post">
 
 <button type="Submit" name="logout-submit">Logout</button>
