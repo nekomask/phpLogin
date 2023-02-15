@@ -70,14 +70,29 @@ div.header-login{
     display: flex;
 }
 
-main {
-    font-size: larger;
+div.wrapper-main {
     display: flex;
+    font-size: larger;
     flex-direction: column;
     align-items: center;
     margin: auto;
     margin-top: 80px;
     border-style: solid;
-    padding: 25px 200px;
+    padding: 24px 90px;
     width: fit-content;
+    flex-wrap: wrap;
+}
+
+section.section-default {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
