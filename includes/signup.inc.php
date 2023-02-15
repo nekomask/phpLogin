@@ -14,10 +14,10 @@ $passwordRepeat = $_POST['pwd-repeat'];
 
 //error handler to check if form element is emtpy
 
-if (empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
+if (empty($username) || empty($email) || empty($password) || empty($passwordRepeat))  {
     //error sends user back to signup page with some information they already entered
 header("Location: ../signup.php?error=emptyfields&uid=".$username."&mail=".$email);
-
+exit();
 }
 
 
