@@ -30,7 +30,7 @@ exit();
     header("Location: ../signup.php?error=invaliduid&mail=".$email);
 exit();
 }else if($password !== $passwordRepeat){
-    header("Location: ../signup.php?error=passwordcheck&mail=".$username."&mail=".$email);
+    header("Location: ../signup.php?error=passwordcheck&uid=".$username."&mail=".$email);
     exit();
     //do we have users with the same username
 }else {
