@@ -25,16 +25,24 @@ session_start()
         <li><a href="#">Contact</a></li>
     </ul>
 <div class="header-login">
-<form action="includes/login.inc.php" method="post">
-    <input type="text" name="mailuid" value="Username/E-mail..">
-    <input type="password" name="pwd" value="Password">
-<button type="Submit" name="login-submit">Login</button>
-</form>
-<a class="signup" href="signup.php">Signup</a>
-<form action="includes/logout.inc.php" method="post">
+    <?php
+       if (isset($_SESSION['userId'])) {
+        echo '<form action="includes/logout.inc.php" method="post">
 
-<button type="Submit" name="logout-submit">Logout</button>
-</form>
+        <button type="Submit" name="logout-submit">Logout</button>
+        </form>';
+    }else{
+        echo '<form action="includes/login.inc.php" method="post">
+        <input type="text" name="mailuid" value="Username/E-mail..">
+        <input type="password" name="pwd" value="Password">
+    <button type="Submit" name="login-submit">Login</button>
+    </form>
+    <a class="signup" href="signup.php">Signup</a>';
+
+    }
+    ?>
+
+
 </div>
 </nav>
 </header>
