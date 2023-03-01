@@ -1,3 +1,5 @@
-This a login system utilizing procedural PHP to send and receive form data to and from a server.
+This an application with user registration and login functionality along with error handlers using procedural PHP.
 
-For this application I followed along with Dani Krossing's procedural PHP tutorial found here: https://www.youtube.com/watch?v=LC9GaXkdxF8
+For this application I followed along with Dani Krossing's PHP login tutorial found here:
+
+ https://www.youtube.com/watch?v=LC9GaXkdxF8
